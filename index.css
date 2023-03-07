@@ -1,94 +1,36 @@
 /*-------------------------------------------------------------------------------------- */
-
-header {
-  background: #fff;
-  width: 100%;
+/*-------------------------------------------------------------------------------------- */
+.topinfo {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99999;
-  height: 63px;
-  line-height: 63px;
-  -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 1px 0px 0px green;
-  box-shadow: 0px 1px 0px 0px red;
+  background-color: #bce8ee;
+  z-index: 999;
 }
-header img {
-  vertical-align: middle;
-  width:50px;
-  height: 50px;
+.navbar{
+  margin-top: 2%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
-
-header nav {
-  float: right;
+#navbarCollapse ul li a {
+  color: #35495E;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-header li {
-  display: inline-block;
+#navbarCollapse ul li a:hover {
+  color: rgb(218, 15, 15);
+  border-bottom: #f85800 2px solid;
+  border-radius: 10px;
 }
-header li.active a {
-  background-color: #0ce642;
-  position: relative;
-  border-radius: 5px;
-  color: rgb(201, 26, 26);
+.navbar-nav li{
+  padding-right: 30px;
 }
-header li a {
-  padding: 0 20px;
-  height: 30px;
-  line-height: 30px;
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 500;
-  color: green;
-}
-header li a:hover {
-  background-color: #f0bb0e;
-  position: relative;
-  border-radius: 5px;
-}
-header li + li {
-  margin-left: 8px;
-}
-/*-------------------------------------------------------------------------------------- */
-
 /*-------------------------------------------------------------------------------------- */
   /*---------------------- Home Section Starts ----------------*/
-
-.welcome img{
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    width: 100%;
-    height: 800px;
-}
-
-.welcome h1{
-    width: 80%;
-    text-align: center;
-    color: red;
-    font-weight: 900px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Libre Baskerville;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px rgb(249, 118, 78);
-
-}
-#appointment{
-    background-color: #f85800;
-    text-align: center;
-    color: white;
-    font-weight: 600px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    border: 2px solid #f85800;
-    transform: translate(-50%, -50%);
-  }
 
 
 /*---------------------- Home Section End ----------------*/
@@ -169,6 +111,7 @@ p, .p {
     font-family: "Montserrat",sans-serif;
     font-size: 18px;
     font-weight: 900;
+    text-decoration: none;
 }
 
 .pt-1, .py-1 {
@@ -322,9 +265,6 @@ p, label, checkbox {
 }
 /*----------------- Footer Section End ---------------------*/
 
-.contact{
-  margin-top: 120px;
-}
 
 /*------------------- Store Hours Start------------------*/
 .demo-bg{
@@ -371,15 +311,3 @@ p, label, checkbox {
   color: #ffac0c; 
   }
   /*------------------- Store Hours End ------------------*/
-
-  .privacypolicy{
-    width: 80%;
-    margin-left: 10%;
-    border: 2px solid black;
-  }
-  .privacypolicy h3, h2{
-    text-align: center;
-  }
-  .privacypolicy p{
-    color:#888
-  }

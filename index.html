@@ -5,42 +5,70 @@
     <title>Laguardia Pharmacy</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
-    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <script src="js/modernizr-2.7.0.min.js"></script>
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <a href="" class="logo left"><img src="drugstore.png" alt=""></a><b style="font-family: Aref Ruqaa Ink; font-size:25px; width: 30px; text-decoration: none; color: orangered;">Laguardia Pharmacy</b>
-        <nav>
-          <ul>
-            <li><a href="#about">ABOUT US</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#features">FEATURES</a></li>
-            <li><a href="#appointment-link">APPOINTMENT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
+    <div class="container-fluid topinfo justify-content-center">
+      <div class="row">
+        <div class="col-md-6">
+          <p style="font-size: 1rem; color: rgb(7, 7, 6);">Opening hours:- <small>Mon - Fri : 9 am - 7 pm, Sat : 10 am - 6 pm, Sun : 10 am - 3 pm </small></p>
+        </div>
+        <div class="col-md-4">
+          <p class="m-0"><a href="mailto:laguardiapharmacy101@gmail.com" style="text-decoration: none; color:rgb(7, 7, 6)"><i class="fa fa-envelope-open me-2" style="color:tomato;"></i>laguardiapharmacy101@gmail.com</a></p>
+        </div>
+        <div class="col-md-2">
+          <p class="m-0"><a href="tel:347-649-0996" style="text-decoration: none; color:black"><i class="fa fa-phone me-2" style="color:tomato;"></i>347-649-0996</a></p>
+        </div>
       </div>
-    </header>
+    </div>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="drugstore.png" alt="Pharmacy" width="50vh" class="mx-auto">
+          </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#features" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
     <!------------------------------------------------------------------------------------------------------->
     <!-------------------------------- Home Section Starts ---------------------------------------------------->
-    <section class="welcome">
-      <img src="bg.jpg">
-      <div>
-        <h1 style="font-size: 5vw;">Welcome to Laguardia Pharmacy</h1>
-        <a style="font-size: 1vw;" class="btn btn-primary btn-lg" id="appointment" href="#appointment-link" role="button" type="button">MAKE AN APPONTMENT</a>
+    <section class="welcome" id="home" style="background-image: url('bg.jpg'); background-size: cover; background-attachment: fixed;">
+      <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div style="max-width: 900px; text-align: center; color: #e20c0c;">
+          <h5 style="font-size: 2rem; margin-bottom: 1rem;">Your Community Pharmacy</h5>
+          <h1 style="font-size: 4rem; margin-bottom: -20rem;">Welcome to Laguardia Pharmacy</h1>
+          <a href="" class="btn btn-secondary" style="font-size: 1.5rem; margin-bottom: -45rem;">Contact Us</a>
+        </div>
       </div>
     </section>
     <!-------------------------------- Home Section End ---------------------------------------------------->
@@ -68,7 +96,7 @@
     <!--------------------------------- Vitamin Section End ----------------------------------->
     <!-------------------------------- Service Section Starts ---------------------------------------------------->
     <section class="container pt-3 mb-3" id="services">
-      <h1 class="h3 block-title text-center">Services Provided</h1>
+      <h1 class="h3 block-title text-center"style="margin-top: 10%;">Services Provided</h1>
       <div class="row pt-5 mt-30">
         <div class="col-lg-4 col-sm-6 mb-30 pb-5">
           <a class="card" href="#">
@@ -196,37 +224,10 @@
     <!-------------------------------- Features Section Starts ---------------------------------------------------->
     <div class="container py-5 my-5" id="features">
       <h1 class="h3 block-title text-center" style="font-size: 50px;
-      margin-top: 30px;
+      margin-top: 8%;
       font-family: 'Times New Roman', Times, serif;
       color: rgb(248, 99, 19);">Special Features for our Customers</h1>
       <section class="p-md-3 mx-md-5">
-        <div class="row mb-5 d-flex align-items-center">
-          <div class="col-lg-6 col-md-6">
-            <div class="card">
-              <div class="card-header white">
-                <h4 class="font-weight-bold mb-0">Free Covid-19 PCR Test</h4>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Attention all residents! Protect yourself and your loved ones from the spread of COVID-19 with a free PCR test at our Pharmacy. 
-                  Our highly trained staff will provide you with a safe, reliable, and accurate test result in no time. 
-                  No appointment necessary, but still it is recommended to make an appointment first in order to save your time otherwise simply walk in to take advantage of this important opportunity. 
-                  Stay safe, stay healthy! Get your free COVID-19 PCR test today at Laguardia Pharmacy.
-                </p>
-                <a class="blue-text font-weight-bold" href="#">Contact us for more Information</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="view overlay rounded z-depth-1">
-              <img src="pcr.avif" class="img-fluid"
-                alt="Sample project image" />
-              <a href="#">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-          </div>
-        </div>
         <div class="row mb-5 d-flex align-items-center justify-content-end">
           <div class="col-md-6 col-lg-4">
             <div class="view overlay rounded z-depth-1">
@@ -372,7 +373,7 @@
     </div>
     <!-------------------------------- Features Section Ends ---------------------------------------------------->
     
-    <!-------------------------------- Appointment Section Start ---------------------------------------------------->
+    <!-------------------------------- Appointment Section Start ---------------------------------------------------
     <div class="well" id="appointment-link">
       <div class="well-header">BOOK ONLINE</div>
       <hr>
@@ -458,7 +459,7 @@
       </div>
       </form>
          
-    </div> 
+    </div> -->
     <!-------------------------------- Appointment Section End ---------------------------------------------------->
 
     <!-------------------------------- Hours Section Start ---------------------------------------------------->
@@ -489,35 +490,32 @@
 
     <!-------------------------------- Map Section Start ---------------------------------------------------->
     <div id="contact">
-      <div class="heading-contact">
-        <h1 style="color:rgb(13, 154, 205); text-align: center; margin-top: 100px; font-size: 50px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact us</h1>
-      </div>
       <section class="contact" style="width:95%">
-        <div class="row text-center">
+        <div class="row text-center contactinfo">
+          <h1 style="color:rgb(13, 154, 205); text-align: center; font-size: 50px; margin-top: 20vh; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact us</h1>
           <div class="col-sm-4">
             <div class="contact-detail-box">
-              <i class="fa fa-th fa-3x text-colored" style="color:orange"></i>
-              <h4 style="margin-top: 10px; color:rgb(9, 117, 250)">Get In Touch</h4>
+              <i class="fa fa-th fa-3x text-colored" style="color:orange; margin-top: 15%;"></i>
+              <h4 style="color:rgb(9, 117, 250);">Get In Touch</h4>
               <abbr title="Phone">Phone:</abbr> 347-649-0996<br>718-478-2576<br>718-476-5660<br>
               E-mail: <a href="mailto:laguardiapharmacy101@gmail.com" class="text-muted">laguardiapharmacy101@gmail.com</a>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="contact-detail-box">
-              <i class="fa fa-book fa-3x text-colored" style="color:orange"></i>
-              <h4 style="margin-top: 10px; color:rgb(9, 117, 250)">Fax</h4>
+              <i class="fa fa-book fa-3x text-colored" style="color:orange; margin-top: 15%;"></i>
+              <h4 style="color:rgb(9, 117, 250)">Fax</h4>
               718-478-2142
             </div>
           </div>
           <div class="col-sm-4">
             <div class="contact-detail-box">
-              <i class="fa fa-map-marker fa-3x text-colored" style="color:orange"></i>
-              <h4 style="margin-top: 10px; color:rgb(9, 117, 250)">Our Location</h4>
-  
+              <i class="fa fa-map-marker fa-3x text-colored" style="color:orange; margin-top: 15%;"></i>
+              <h4 style="color:rgb(9, 117, 250)">Our Location</h4>
               <address>
-              101-22 Astoria Boulevard, East Elmhurst<br>
-              Queens, NY 11369
-            </address>
+                101-22 Astoria Boulevard, East Elmhurst<br>
+                Queens, NY 11369
+              </address>
             </div>
           </div>
         </div>
@@ -526,6 +524,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.024140353152!2d-73.86973208511344!3d40.76149377932654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f94e5090219%3A0x71af9b53f0e41172!2sLaguardia%20Pharmacy!5e0!3m2!1sen!2sus!4v1675360662289!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
+    
     <!-------------------------------- Map Section End ---------------------------------------------------->
 
     <!------------------------------- Privacy Policy Code --------------------------------------->
@@ -571,19 +570,41 @@
     </section>
 
     <!------------------------------- Privcay Policy Code End ----------------------------------->
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Hello!</h4>
+          </div>
+          <div class="modal-body">
+            <p>How are you today?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
     <!-------------------------------- Footer Section Start ---------------------------------------------------->
     <div class="footer-basic">
         <footer>
             <div style="color:orange; text-align:center;"><h2>Laguardia Pharmacy</h2></div>
-            <div class="social"><a href="#"><img src="2.png"></a><a href="maito:laguardiapharmacy101@gmail.com"><img src="gmail.png"></a><a href="#"><img src="map.png"></a></div>
+            <div class="social"><a href="tel:347-649-0996"><img src="2.png"></a><a href="mailto:laguardiapharmacy101@gmail.com"><img src="gmail.png"></a><a href="https://goo.gl/maps/ke9MqZGYe9ku9Ltd6"><img src="map.png"></a></div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Home</a></li>
                 <li class="list-inline-item"><a href="#services">Services</a></li>
                 <li class="list-inline-item"><a href="#features">Features</a></li>
-                <li class="list-inline-item"><a href="#appointment-link">Appointment</a></li>
+                <!--<li class="list-inline-item"><a href="#appointment-link">Appointment</a></li>-->
                 <li class="list-inline-item"><a href="#contact">Contact</a></li>
             </ul>
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">&copy; 2023 Laguardia Pharmacy. All rights reserved.</div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">&copy; 2023 Laguardia Pharmacy. All rights reserved.
+    
+              <div class="text-center p-3" style="color: rgb(8, 7, 7)">Code and Design by: Fnu Rahul (mrsaini281@gmail.com)</div>
+            </div>
+            
         </footer>
     </div>
     <!-------------------------------- Footer Section End ---------------------------------------------------->
@@ -617,6 +638,7 @@
           });
       });
   </script>
+  <script src="lightbox.js"></script>
   <script src="calender.js"></script>
   <script src="urlupdatescript.js"></script>
   </body>
