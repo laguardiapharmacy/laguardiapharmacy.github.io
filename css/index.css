@@ -4,8 +4,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #bce8ee;
+  background-color: #e5ebec;
   z-index: 999;
+  padding-top: 5px;
 }
 .navbar{
   margin-top: 2%;
@@ -29,9 +30,9 @@
 .navbar-nav li{
   padding-right: 30px;
 }
+
 /*-------------------------------------------------------------------------------------- */
   /*---------------------- Home Section Starts ----------------*/
-
 
 /*---------------------- Home Section End ----------------*/
 
@@ -99,8 +100,9 @@ img, figure {
     color: #8c8c8c;
 }
 
+
 .text-sm {
-    font-size: 12px !important;
+    font-size: 14px !important;
 }
 p, .p {
     margin: 0 0 16px;
@@ -112,6 +114,10 @@ p, .p {
     font-size: 18px;
     font-weight: 900;
     text-decoration: none;
+    color: rgb(54, 129, 241);
+}
+.card-body i{
+  color:rgb(22, 110, 226);
 }
 
 .pt-1, .py-1 {
