@@ -1,7 +1,4 @@
 /*-------------------------------------------------------------------------------------- */
-html {
-  scroll-behavior: smooth;
-}
 /*-------------------------------------------------------------------------------------- */
 .topinfo {
   position: fixed;
@@ -12,7 +9,7 @@ html {
   padding-top: 5px;
 }
 .navbar{
-  margin-top: 2%;
+  margin-top: 0%;
   position: fixed;
   top: 0;
   left: 0;
@@ -35,9 +32,12 @@ html {
 }
 
 /*-------------------------------------------------------------------------------------- */
-  /*---------------------- Home Section Starts ----------------*/
-
-/*---------------------- Home Section End ----------------*/
+  /*---------------------- About Section Starts ----------------*/
+.bg-light p{
+  color: black;
+  font-weight: 60px;
+}
+/*---------------------- About Section End ----------------*/
 
 /*---------------------- Service Section Starts ----------------*/
 #services h1{
@@ -120,7 +120,7 @@ p, .p {
     color: rgb(54, 129, 241);
 }
 .card-body i{
-  color:black;
+  color:rgb(22, 110, 226);
 }
 
 .pt-1, .py-1 {
@@ -130,6 +130,11 @@ p, .p {
 .head-icon{
     margin-top:18px;
     color:#FF4500
+}
+.card-body p{
+  color: black;
+  font-size: 20px;
+
 }
 /*---------------------- Service Section Ends ----------------*/
 
@@ -320,3 +325,4 @@ p, label, checkbox {
   color: #ffac0c; 
   }
   /*------------------- Store Hours End ------------------*/
+
