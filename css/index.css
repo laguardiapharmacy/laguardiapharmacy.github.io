@@ -1,14 +1,35 @@
 /*-------------------------------------------------------------------------------------- */
-/*-------------------------------------------------------------------------------------- */
-.topinfo {
+
+/* Holiday notice */
+#holiday_hours {
   position: fixed;
+  margin-top: 70px; /* Adjust the margin-top value as needed */
+  width: 100%;
+  z-index: 998;
   top: 0;
-  left: 0;
-  background-color: #e5ebec;
-  z-index: 999;
-  padding-top: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
 }
-.navbar{
+
+@media (max-width: 600px) {
+  .navbar {
+    z-index: 1000;
+  }
+
+  #holiday_hours {
+    font-size: 16px;
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+/*-------------------------------------------------------------------------------------- */
+/* Navigation bar */
+.navbar {
   margin-top: 0%;
   position: fixed;
   top: 0;
@@ -16,6 +37,7 @@
   width: 100%;
   z-index: 999;
 }
+
 #navbarCollapse ul li a {
   color: #35495E;
   font-size: 20px;
