@@ -1,9 +1,9 @@
 /*-------------------------------------------------------------------------------------- */
 
-/* Holiday notice */
+/* Holiday notice 
 #holiday_hours {
   position: fixed;
-  margin-top: 70px; /* Adjust the margin-top value as needed */
+  margin-top: 70px; 
   width: 100%;
   z-index: 998;
   top: 0;
@@ -26,7 +26,7 @@
     padding: 10px;
   }
 }
-
+*/
 /*-------------------------------------------------------------------------------------- */
 /* Navigation bar */
 .navbar {
